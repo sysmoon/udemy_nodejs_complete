@@ -1,26 +1,30 @@
 # Introduce
+
 Set NodeJS Dev Environemtn on MacOS.
 
 # Installation
+
 - nvm
 - nodejs
-
 
 ## NVM
 
 ### Installation
 
 - Install NVM
+
 ```
 brew install nvm
 ```
 
 - Create ~/.nvm
+
 ```
 mkdir -p ~/.nvm
 ```
 
 - Set envrionments variables to zsh
+
 ```
 $ cat <<EOF >> .zshrc
 
@@ -32,6 +36,7 @@ EOF
 ```
 
 - Check nvm version
+
 ```
 source ~/.zshrc
 nvm --version (or nvm -V)
@@ -40,11 +45,13 @@ nvm --version (or nvm -V)
 ### Uninstallation
 
 - delete nmv
+
 ```
 brew uninstall nvm
 ```
 
 - delete nvm dir
+
 ```
 rm -rf ~/.nvm
 ```
@@ -54,60 +61,70 @@ rm -rf ~/.nvm
 ### Usage
 
 - Search all available nvm version
+
 ```
 nvm ls-remote
 ```
 
 - Search current installed nvm version
+
 ```
 nvm ls
 ```
 
 - Use certain nvm version
+
 ```
 nvm use <version>
 ```
 
 - Check current nvm version
+
 ```
 nvm current
 ```
 
 - Install certain nvm version
+
 ```
 nvm install <version>
 ```
 
 - Install latest nvm version
+
 ```
 nvm install node
 ```
 
 - Install LTS nvm version
+
 ```
 nvm install --lts
 ```
 
 - Delete certain nvm version
+
 ```
 nvm uninstall <version>
 ```
 
 ### Directory Structure
 
-* Version Info
+- Version Info
   - Node.js: v16.18.0
   - 8.19.2
 
 Dependency Packages is split with global and local.
 In my case install package local basically.
 
-* Global Dependency Packages
+- Global Dependency Packages
+
 ```
 /Users/sysmoon/.nvm/versions/node/v17.5.0/lib
 ```
 
-* Local Dependency Packages
+- Local Dependency Packages
+
 ```
 PROJECT
   |- node_modules/      # 의존 패키지가 설치되는 디렉토리입니다.
@@ -125,6 +142,7 @@ console.log('Hello sysmoon');
 ```
 
 2. Run test.js on NodeJS runtime environment.
+
 ```
 node test.js
 Hello sysmoon
@@ -134,86 +152,103 @@ Hello sysmoon
 
 Using npm(node package module) set node dev env.
 
-* create package.json
+- create package.json
+
 ```
 npm init
 ```
 
 There are some configuration set for project.
 If you want to skip use this.
+
 ```
 npm init -y
 ```
 
 4. Install packages
 
-* Local Env
+- Local Env
+
 ```
 npm install <package-name>
 ```
 
-* Global Env
+- Global Env
+
 ```
 npm install -g <package-name>
 ```
 
-* Install package dependency mode
+- Install package dependency mode
+
 ```
 npm install --save <package-name>
 ```
 
-* Install package dev dependency mode
+- Install package dev dependency mode
+
 ```
 npm instlal --save-dev <package-name>
 or
 npm instlal -D <package-name>
 ```
 
-* Install packages specific version
+- Install packages specific version
+
 ```
 npm install <package-name>@<version>
 ```
 
 5. Uninstall packages
-* Delete local package
+
+- Delete local package
+
 ```
 npm uninstall <package-name>
 ```
 
-* Delete global package
+- Delete global package
+
 ```
 npm uninstall -g <package-name>
 ```
 
 6. Update package
-* Update all packages in package.json
+
+- Update all packages in package.json
+
 ```
 npm update
 ```
 
-* Update specific package version
+- Update specific package version
+
 ```
 npm update <package-name>
 ```
 
 7. Package Path
 
-* Search local package path
+- Search local package path
+
 ```
 npm root
 ```
 
-* Search global package path
+- Search global package path
+
 ```
 npm root -g
 ```
 
-* Run start script of packages.json
+- Run start script of packages.json
+
 ```
 npm start
 ```
 
-* Run specific start script of packages.json
+- Run specific start script of packages.json
+
 ```
 npm run <script-name>
 ```
@@ -221,6 +256,7 @@ npm run <script-name>
 ## 3'rd Parhy Tools
 
 - neovim
+
   - install neovim on osx
   - install neovim on vscode
 
@@ -228,3 +264,6 @@ npm run <script-name>
   - neovim
   - npm intelligence
 
+# Ref
+
+- [top 10 vscode extention for nodejs ](https://www.linkedin.com/pulse/10-must-have-vs-code-extension-nodejs-developer-chandan-thakur/?trk=pulse-article_more-articles_related-content-card)

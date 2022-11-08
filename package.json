@@ -1,0 +1,35 @@
+{
+  "name": "udemy_nodejs_complete",
+  "version": "1.0.0",
+  "description": "udemy nodejs complete",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sysmoon/udemy_nodejs_complete.git"
+  },
+  "keywords": [
+    "nodejs",
+    "study",
+    "udemy"
+  ],
+  "author": "sysmoon@sk.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sysmoon/udemy_nodejs_complete/issues"
+  },
+  "homepage": "https://github.com/sysmoon/udemy_nodejs_complete#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
