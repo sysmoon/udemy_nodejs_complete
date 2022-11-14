@@ -10,9 +10,10 @@ const shopRoutes = require("./routes/shop");
 
 // body analytics
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "public")));
 
 // add router
-app.use("/admin", adminRoutes);
+app.use("/admin", adminRoutes.routes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
